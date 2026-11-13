@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Mahmoud Essayed — étudiant en design graphique. Identités visuelles, direction artistique et design graphique.">
+  <title>Mahmoud Essayed — Graphic Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#080808;--surface:#111;--surface2:#171717;--white:#f5f5f7;--muted:#96969d;--line:rgba(255,255,255,.11);--purple:#a78bfa;--blue:#7aa7ff;--ease:cubic-bezier(.2,.75,.25,1);--font:'DM Sans',sans-serif;--display:'Manrope',sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}body{margin:0;background:var(--bg);color:var(--white);font-family:var(--font);-webkit-font-smoothing:antialiased;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-width:100%}::selection{background:#c4b5fd;color:#080808}
+    .shell{width:min(1160px,calc(100% - 64px));margin-inline:auto}.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}.accent{background:linear-gradient(110deg,#c4b5fd,#82aaff);background-clip:text;-webkit-background-clip:text;color:transparent}
+    /* Dynamic Island: kept as the signature navigation element */
+    .nav-wrap{position:fixed;z-index:100;top:18px;left:0;right:0;display:flex;justify-content:center;padding:0 18px;pointer-events:none}.island{pointer-events:auto;width:min(720px,100%);min-height:62px;padding:9px 11px 9px 22px;border:1px solid rgba(255,255,255,.13);border-radius:999px;background:rgba(24,24,26,.76);backdrop-filter:blur(28px) saturate(165%);-webkit-backdrop-filter:blur(28px) saturate(165%);box-shadow:0 12px 40px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.07);display:flex;align-items:center;justify-content:space-between;transition:width .45s var(--ease),background .3s,border-color .3s}.island.scrolled{background:rgba(15,15,17,.9);border-color:rgba(255,255,255,.18);box-shadow:0 14px 45px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.08)}.wordmark{font:800 16px var(--display);letter-spacing:-.06em;white-space:nowrap}.wordmark span{color:#b7a0ff}.nav-links{display:flex;align-items:center;gap:30px;margin-left:auto;margin-right:28px}.nav-links a{font-size:12px;color:#c7c7cc;transition:color .2s}.nav-links a:hover,.nav-links a.active{color:#fff}.nav-contact{font-size:12px;font-weight:600;color:#09090b;background:#f5f5f7;border-radius:999px;padding:11px 17px;transition:transform .25s,background .25s}.nav-contact:hover{transform:scale(1.04);background:#dcdce2}.menu-toggle{display:none;width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.07);color:#fff;cursor:pointer;font-size:19px}
+    .hero{min-height:850px;min-height:100svh;padding:170px 0 95px;display:flex;align-items:center;position:relative;isolation:isolate}.hero:before{content:"";position:absolute;z-index:-1;width:620px;height:620px;right:-170px;top:70px;background:radial-gradient(circle,rgba(103,80,180,.16),transparent 68%);filter:blur(15px);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:72px;align-items:center}.hero-copy{max-width:680px}.availability{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:999px;padding:9px 14px;color:#c7c7cc;font-size:12px;background:rgba(255,255,255,.035);margin-bottom:28px}.availability:before{content:"";width:7px;height:7px;background:#7bd9a6;border-radius:50%;box-shadow:0 0 12px rgba(123,217,166,.6)}h1,h2,h3,p{margin-top:0}.hero h1{font:700 clamp(56px,8vw,100px)/.99 var(--display);letter-spacing:-.085em;margin:0 0 26px}.hero h1 .line2{display:block;color:#aaaab1}.hero-description{font-size:17px;line-height:1.8;color:#a8a8af;max-width:550px;margin:0 0 34px}.hero-actions{display:flex;align-items:center;gap:13px;flex-wrap:wrap}.button{min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:0 20px;border-radius:999px;font-size:13px;font-weight:600;transition:transform .25s var(--ease),background .25s,border-color .25s}.button:hover{transform:translateY(-3px)}.button-light{background:#f5f5f7;color:#09090b}.button-light:hover{background:#dcdce2}.button-quiet{border:1px solid var(--line);color:#e4e4e7;background:rgba(255,255,255,.035)}.button-quiet:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.08)}.button .arrow{font-size:16px}.hero-visual{position:relative;max-width:420px;margin-left:auto;width:100%}.portrait-frame{aspect-ratio:4/5;border-radius:30px;overflow:hidden;background:linear-gradient(145deg,#26232d,#101014);border:1px solid rgba(255,255,255,.14);box-shadow:0 35px 90px rgba(0,0,0,.35);position:relative}.portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.75);transition:transform .8s var(--ease)}.portrait-frame:hover img{transform:scale(1.035)}.portrait-frame:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.3));pointer-events:none}.floating-note{position:absolute;left:-46px;bottom:36px;padding:15px 18px;border:1px solid rgba(255,255,255,.13);border-radius:17px;background:rgba(25,25,28,.82);backdrop-filter:blur(20px);box-shadow:0 15px 35px rgba(0,0,0,.3);font-size:11px;color:#c8c8ce;line-height:1.6}.floating-note strong{display:block;color:#fff;font-size:13px;font-weight:600}.hero-bottom{position:absolute;bottom:30px;left:0;right:0;display:flex;justify-content:space-between;color:#77777e;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+    .section{padding:125px 0}.section-top{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:46px}.section-title{font:700 clamp(36px,5vw,58px)/1.05 var(--display);letter-spacing:-.065em;margin:12px 0 0}.section-intro{max-width:340px;color:var(--muted);font-size:14px;line-height:1.8;margin:0}.about-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:100px;align-items:start}.about-aside{position:sticky;top:120px}.about-aside .eyebrow{margin-bottom:20px}.about-statement{font:600 clamp(29px,4vw,45px)/1.22 var(--display);letter-spacing:-.055em;margin:0}.about-body p{font-size:15px;line-height:1.95;color:#a6a6ad;margin-bottom:20px}.about-body p:first-child{color:#e0e0e5;font-size:18px;line-height:1.7}.skill-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:32px}.skill{font-size:11px;color:#c6c6cd;border:1px solid var(--line);border-radius:999px;padding:9px 13px;background:rgba(255,255,255,.025);transition:background .2s,border-color .2s}.skill:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.25)}
+    .work-section{background:linear-gradient(180deg,transparent,rgba(255,255,255,.018) 20%,rgba(255,255,255,.018) 80%,transparent)}.work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.project{min-width:0;cursor:pointer}.project:nth-child(2){margin-top:90px}.project:nth-child(3){margin-top:-65px}.project:nth-child(4){margin-top:25px}.project-media{height:390px;border-radius:24px;overflow:hidden;position:relative;background:#17171b;border:1px solid rgba(255,255,255,.08)}.project-media img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease),filter .6s}.project:hover .project-media img{transform:scale(1.045);filter:brightness(.82)}.project-media:after{content:"↗";position:absolute;right:18px;top:18px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(245,245,247,.95);color:#111;font-size:18px;opacity:0;transform:translateY(5px);transition:.25s}.project:hover .project-media:after{opacity:1;transform:none}.project-info{display:flex;justify-content:space-between;align-items:start;padding:17px 3px 0;gap:15px}.project-info h3{font:600 22px var(--display);letter-spacing:-.04em;margin:0 0 6px}.project-info p{font-size:12px;color:var(--muted);margin:0}.project-index{font-size:11px;color:#77777e;padding-top:5px}.skills-panel{grid-column:1/-1;margin-top:30px;padding:30px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(120deg,rgba(255,255,255,.055),rgba(255,255,255,.015));display:flex;justify-content:space-between;align-items:center;gap:30px}.skills-panel h3{font:600 19px var(--display);letter-spacing:-.03em;margin:0}.skills-panel p{color:var(--muted);font-size:12px;margin:6px 0 0}.tools{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.tool{padding:9px 12px;border:1px solid var(--line);border-radius:10px;color:#d2d2d8;font-size:11px}
+    .contact-section{padding:110px 0 90px}.contact-card{position:relative;overflow:hidden;border-radius:30px;border:1px solid rgba(255,255,255,.12);background:linear-gradient(135deg,#17171c,#101014 65%,#171523);padding:85px 35px;text-align:center}.contact-card:before{content:"";position:absolute;width:550px;height:350px;left:50%;top:-230px;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(139,111,226,.2),transparent 70%);pointer-events:none}.contact-card>*{position:relative}.contact-card h2{font:700 clamp(38px,6vw,66px)/1.06 var(--display);letter-spacing:-.07em;margin:16px 0}.contact-card p{max-width:470px;margin:0 auto 30px;color:#a4a4ad;font-size:14px;line-height:1.8}.email-link{display:inline-flex;align-items:center;gap:12px;border-radius:999px;background:#f5f5f7;color:#080808;padding:16px 22px;font-size:13px;font-weight:600;transition:transform .25s,background .25s}.email-link:hover{transform:translateY(-3px);background:#dddde3}.footer{padding:25px 0 35px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:#77777e;font-size:11px}.footer a{transition:color .2s}.footer a:hover{color:#fff}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}.reveal.visible{opacity:1;transform:none}.delay-1{transition-delay:.08s}.delay-2{transition-delay:.16s}.delay-3{transition-delay:.24s}
+    .project-modal{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.78);backdrop-filter:blur(18px);display:none;align-items:center;justify-content:center;padding:24px}.project-modal.open{display:flex}.modal-card{width:min(720px,100%);max-height:90vh;overflow:auto;border:1px solid var(--line);border-radius:25px;background:#141416;padding:22px;box-shadow:0 30px 100px rgba(0,0,0,.55);animation:modalIn .35s var(--ease)}@keyframes modalIn{from{opacity:0;transform:translateY(15px) scale(.985)}to{opacity:1;transform:none}}.modal-top{display:flex;justify-content:space-between;align-items:center;padding:2px 2px 15px}.modal-close{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.06);color:#fff;font-size:20px;cursor:pointer}.modal-card img{width:100%;max-height:360px;object-fit:cover;border-radius:15px}.modal-card h3{font:700 30px var(--display);letter-spacing:-.05em;margin:22px 0 8px}.modal-card p{color:#a7a7af;font-size:14px;line-height:1.8;margin:0 0 10px}
+    @media(max-width:850px){.shell{width:calc(100% - 44px)}.hero{padding-top:145px;min-height:auto}.hero-grid{grid-template-columns:1fr .75fr;gap:30px}.hero h1{font-size:clamp(54px,9vw,78px)}.hero-visual{max-width:310px}.floating-note{left:-20px}.about-grid{gap:45px}.project-media{height:320px}.project:nth-child(2){margin-top:55px}.project:nth-child(3){margin-top:-40px}.nav-links{gap:18px;margin-right:18px}}
+    @media(max-width:640px){.shell{width:calc(100% - 38px)}.nav-wrap{top:12px;padding:0 12px}.island{min-height:56px;padding:7px 8px 7px 18px}.nav-links{display:none;position:absolute;top:66px;left:0;right:0;margin:0;padding:12px;border:1px solid var(--line);border-radius:22px;background:rgba(20,20,22,.96);backdrop-filter:blur(25px);box-shadow:0 18px 50px rgba(0,0,0,.4);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:14px 12px;border-radius:12px}.nav-links a:hover{background:rgba(255,255,255,.06)}.nav-contact{display:none}.menu-toggle{display:block}.hero{padding:130px 0 75px}.hero-grid{grid-template-columns:1fr;gap:42px}.hero h1{font-size:clamp(57px,14vw,82px)}.hero-description{font-size:15px}.hero-visual{width:min(78%,340px);margin:0 auto}.portrait-frame{border-radius:24px}.floating-note{left:-28px;bottom:22px}.hero-bottom{display:none}.section{padding:88px 0}.section-top{display:block;margin-bottom:32px}.section-intro{margin-top:16px}.about-grid{grid-template-columns:1fr;gap:28px}.about-aside{position:static}.about-statement{max-width:440px}.about-body p:first-child{font-size:16px}.work-grid{grid-template-columns:1fr;gap:34px}.project:nth-child(n){margin-top:0}.project-media{height:340px;border-radius:20px}.project-info h3{font-size:20px}.skills-panel{display:block;padding:24px;margin-top:12px}.tools{justify-content:flex-start;margin-top:18px}.contact-section{padding:85px 0 65px}.contact-card{padding:65px 22px;border-radius:24px}.contact-card h2{font-size:clamp(38px,10vw,54px)}.email-link{font-size:11px;padding:15px 16px}.footer{flex-direction:column;align-items:flex-start;line-height:1.6}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <div class="nav-wrap">
+    <nav class="island" id="navbar" aria-label="Navigation principale">
+      <a href="#home" class="wordmark">Mahmoud<span>.</span>E</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">À propos</a><a href="#work">Projets</a><a href="#contact">Contact</a>
+      </div>
+      <a class="nav-contact" href="#contact">Parlons de votre projet <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <div class="availability">Étudiant en design graphique · Disponible pour projets</div>
+          <h1>Mahmoud<br><span class="line2">Essa<span class="accent">yed.</span></span></h1>
+          <p class="hero-description">Passionné par la créativité, l'imagination et les compositions visuelles. Je transforme les idées en expériences visuelles claires, expressives et mémorables.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#work">Découvrir mes projets <span class="arrow">↗</span></a>
+            <a class="button button-quiet" href="#contact">Me contacter <span class="arrow">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-visual reveal delay-2">
+          <div class="portrait-frame"><img src="profile.jpg" alt="Portrait de Mahmoud Essayed"></div>
+          <div class="floating-note"><strong>Graphic design</strong>Identité · Image · Typographie</div>
+        </div>
+      </div>
+      <div class="shell hero-bottom"><span>Portfolio — 2026</span><span>Scroll to explore ↓</span></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="shell about-grid">
+        <div class="about-aside reveal"><div class="eyebrow">01 / À propos</div><h2 class="about-statement">Le design est une façon de <span class="accent">voir le monde.</span></h2></div>
+        <div class="about-body reveal delay-1">
+          <p>Mon parcours a commencé dans les marges de mes cahiers d'école, remplies de croquis et de typographies inventées.</p>
+          <p>À la recherche constante d'équilibre, je m'inspire de la culture urbaine pour concevoir des identités visuelles simples, percutantes et accessibles à tous. Je suis fasciné par la capacité du design à clarifier nos interactions quotidiennes.</p>
+          <p>Curieux et touche-à-tout, j'aime explorer les formes, les couleurs et les compositions pour donner à chaque idée une personnalité qui lui est propre.</p>
+          <div class="skill-row"><span class="skill">Adobe Illustrator</span><span class="skill">Adobe Photoshop</span><span class="skill">Figma</span><span class="skill">Identité visuelle</span><span class="skill">Création de logo</span><span class="skill">Branding</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="shell">
+        <div class="section-top reveal"><div><div class="eyebrow">02 / Sélection</div><h2 class="section-title">Projets récents<span class="accent">.</span></h2></div><p class="section-intro">Quelques explorations autour de l'identité, de la composition et du langage visuel. Chaque détail a une intention.</p></div>
+        <div class="work-grid">
+          <article class="project reveal" tabindex="0" role="button" aria-label="Voir le projet Aroma" data-title="Aroma" data-category="Identité visuelle" data-description="Ce logotype illustre l'art du café à travers un design minimaliste en ligne continue. Les teintes cuivrées chaleureuses soulignent un positionnement premium et artisanal." data-image="aroma.jpg">
+            <div class="project-media"><img src="aroma.jpg" alt="Identité visuelle Aroma" loading="lazy"></div>
+            <div class="project-info"><div><h3>Aroma</h3><p>Identité visuelle</p></div><span class="project-index">01 / 03</span></div>
+          </article>
+          <article class="project reveal delay-1" tabindex="0" role="button" aria-label="Voir le projet Pizzeria Bella" data-title="Pizzeria Bella" data-category="Identité de marque" data-description="L'intégration astucieuse d'une part de pizza et de feuilles de basilic dans une géométrie circulaire crée une icône forte, incarnant l'authenticité de la gastronomie italienne." data-image="bella.jpg">
+            <div class="project-media"><img src="bella.jpg" alt="Identité de marque Pizzeria Bella" loading="lazy"></div>
+            <div class="project-info"><div><h3>Pizzeria Bella</h3><p>Identité de marque</p></div><span class="project-index">02 / 03</span></div>
+          </article>
+          <article class="project reveal" tabindex="0" role="button" aria-label="Voir le projet Majesté" data-title="Majesté" data-category="Branding de luxe" data-description="Ce monogramme M aux lignes géométriques et architecturales incarne l'élégance et la puissance d'une maison de parfumerie masculine exclusive et luxueuse." data-image="majeste.jpg">
+            <div class="project-media"><img src="majeste.jpg" alt="Monogramme Majesté" loading="lazy"></div>
+            <div class="project-info"><div><h3>Majesté</h3><p>Branding de luxe</p></div><span class="project-index">03 / 03</span></div>
+          </article>
+          <div class="skills-panel reveal delay-1"><div><h3>Outils & savoir-faire</h3><p>Les outils derrière les idées.</p></div><div class="tools"><span class="tool">Illustrator</span><span class="tool">Photoshop</span><span class="tool">Figma</span><span class="tool">Branding</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="shell">
+        <div class="contact-card reveal">
+          <div class="eyebrow">03 / Contact</div>
+          <h2>Un projet en tête ?<br><span class="accent">Créons ensemble.</span></h2>
+          <p>Je suis disponible pour des projets freelance ou de nouvelles opportunités. Une idée, une question ou une collaboration ? Parlons-en.</p>
+          <a class="email-link" href="mailto:mahmoud.essayed@isban.ucar.tn">mahmoud.essayed@isban.ucar.tn <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell footer"><span>© 2026 Mahmoud Essayed. Tous droits réservés.</span><span>Conçu avec intention.</span><a href="#home">Retour en haut ↑</a></footer>
+
+  <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card"><div class="modal-top"><span class="eyebrow" id="modal-category">Projet</span><button class="modal-close" id="modal-close" aria-label="Fermer">×</button></div><img id="modal-image" src="" alt=""><h3 id="modal-title"></h3><p id="modal-description"></p></div>
+  </div>
+
+  <script>
+    const navbar=document.getElementById('navbar');
+    const menuToggle=document.getElementById('menu-toggle');
+    const navLinks=document.getElementById('nav-links');
+    const sections=[...document.querySelectorAll('main section[id]')];
+    const navAnchors=[...navLinks.querySelectorAll('a')];
+
+    window.addEventListener('scroll',()=>{
+      navbar.classList.toggle('scrolled',window.scrollY>24);
+      let current='';
+      sections.forEach(section=>{if(window.scrollY>=section.offsetTop-180)current=section.id});
+      navAnchors.forEach(link=>link.classList.toggle('active',link.getAttribute('href')==='#'+current));
+    },{passive:true});
+
+    menuToggle.addEventListener('click',()=>{
+      const open=navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded',String(open));
+      menuToggle.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu');
+      menuToggle.textContent=open?'×':'☰';
+    });
+    navAnchors.forEach(link=>link.addEventListener('click',()=>{
+      navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰';
+    }));
+
+    const revealObserver=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target)}});
+    },{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+
+    const modal=document.getElementById('project-modal');
+    const modalImage=document.getElementById('modal-image');
+    const openProject=card=>{
+      document.getElementById('modal-category').textContent=card.dataset.category;
+      document.getElementById('modal-title').textContent=card.dataset.title;
+      document.getElementById('modal-description').textContent=card.dataset.description;
+      modalImage.src=card.dataset.image;modalImage.alt=card.dataset.title;
+      modal.classList.add('open');document.body.style.overflow='hidden';document.getElementById('modal-close').focus();
+    };
+    const closeProject=()=>{modal.classList.remove('open');document.body.style.overflow='';};
+    document.querySelectorAll('.project').forEach(card=>{
+      card.addEventListener('click',()=>openProject(card));
+      card.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openProject(card)}});
+    });
+    document.getElementById('modal-close').addEventListener('click',closeProject);
+    modal.addEventListener('click',event=>{if(event.target===modal)closeProject()});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape'&&modal.classList.contains('open'))closeProject()});
+  </script>
+</body>
+</html>
